@@ -1,0 +1,41 @@
+.dropDown{
+    cursor: pointer;
+    .dropdown-container{
+        overflow: hidden;
+        width: 200px;
+        height: 0px;
+        list-style-type: none;
+        position: absolute;
+        // bottom:-100px;
+        transition: .5s;
+        background-color: white;
+        box-shadow: 1px 1px 3px black;
+        >li{
+            padding: 10px;
+        }
+    }
+    &:hover{
+        .dropdown-container{
+            height: auto;
+            bottom: auto;
+            z-index: 10;
+        }
+    }
+}
+
+.slide[slide-number="1"]{
+    background-image: url("../images/programmer-slide1.jpg");
+}
+.slide[slide-number="2"]{
+    background-image: url("../images/Wallpaper\ \(134\).jpg");
+}
+.slide[slide-number="3"]{
+    background-image: url("../images/Wallpaper\ \(179\).jpg");
+}
+.arrow-toggle{
+    color: white;
+    cursor: pointer;
+    &:hover{
+    color: $sky-blue;
+    }
+  }

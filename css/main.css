@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: 'tahoma';
+}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.container, header .top-menu-container, header .middle-topMenu-container, main .top-slider .slide .text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container > *, header .top-menu-container > *, header .middle-topMenu-container > *, main .top-slider .slide .text > * {
+  width: 60%;
+}
+
+.dropDown {
+  cursor: pointer;
+}
+
+.dropDown .dropdown-container {
+  overflow: hidden;
+  width: 200px;
+  height: 0px;
+  list-style-type: none;
+  position: absolute;
+  transition: .5s;
+  background-color: white;
+  box-shadow: 1px 1px 3px black;
+}
+
+.dropDown .dropdown-container > li {
+  padding: 10px;
+}
+
+.dropDown:hover .dropdown-container {
+  height: auto;
+  bottom: auto;
+  z-index: 10;
+}
+
+.slide[slide-number="1"] {
+  background-image: url("../images/programmer-slide1.jpg");
+}
+
+.slide[slide-number="2"] {
+  background-image: url("../images/Wallpaper (134).jpg");
+}
+
+.slide[slide-number="3"] {
+  background-image: url("../images/Wallpaper (179).jpg");
+}
+
+.arrow-toggle {
+  color: white;
+  cursor: pointer;
+}
+
+.arrow-toggle:hover {
+  color: #43baff;
+}
+
+header .top-menu-container {
+  background-color: #141d38;
+}
+
+header .top-menu-container .top-menu {
+  color: #b5b5b5;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .top-menu-container .top-menu .contact {
+  display: flex;
+}
+
+header .top-menu-container .top-menu .contact > div {
+  margin: 0 10px;
+}
+
+header .top-menu-container .top-menu .contact > div > i {
+  margin-left: 5px;
+  color: white;
+}
+
+header .top-menu-container .top-menu .social-media > a {
+  color: #b5b5b5;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: .5s;
+}
+
+header .top-menu-container .top-menu .social-media > a:hover {
+  color: #43baff;
+}
+
+header .middle-topMenu-container .middle-topMenu {
+  height: 15vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .middle-topMenu-container .middle-topMenu > div {
+  padding: 20px;
+}
+
+header .middle-topMenu-container .middle-topMenu .logo {
+  height: 100%;
+}
+
+header .middle-topMenu-container .middle-topMenu .logo img {
+  height: 100%;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container {
+  display: flex;
+  align-items: stretch;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li {
+  margin: 0 20px;
+  height: 100%;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li > span, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li > span {
+  color: #b5b5b5;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li > a, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li > a {
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  transition: .5s;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li > a:hover, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li > a:hover {
+  color: #43baff;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li > button, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li > button {
+  padding: 15px 20px;
+  background-color: #43baff;
+  color: white;
+  transition: .5s;
+}
+
+header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar > li > button:hover, header .middle-topMenu-container .middle-topMenu .nav-container ul.navbar div > li > button:hover {
+  background-color: #7141b1;
+}
+
+main .top-slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main .top-slider .slide {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+}
+
+main .top-slider .slide .content {
+  background-color: rgba(0, 57, 243, 0.466);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+main .top-slider .slide .text {
+  color: white;
+  font-size: 2.5em;
+}
+
+main .top-slider .slide .control {
+  padding: 50px;
+}
+
+main .top-slider .slide .control span {
+  color: white;
+}
+
+main .top-slider .active {
+  opacity: 1 !important;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
